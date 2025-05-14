@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Pinyinizer",
+    "version": "1.0",
+    "description": "Adds pinyin annotations to Chinese characters on webpages.",
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["pinyin.js", "content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
